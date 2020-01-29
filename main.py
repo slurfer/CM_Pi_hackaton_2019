@@ -9,7 +9,7 @@ camera.resolution = (2592, 1944)
 
 
 #taking the photos
-for a in range(10): #the variable a is going to be a serial number of photos
+for a in range(10): #the variable a is going to be the serial number of photos
     try:
         filename = (str(a) + "_" + dt.datetime.now().strftime("%d/%m/%Y %H:%M:%S") +".jpg") #the variable filename is going to be the name of the following photo
         camera.annotate_text = filename + dt.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
