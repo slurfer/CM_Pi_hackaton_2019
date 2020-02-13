@@ -48,7 +48,7 @@ now_time = dt.datetime.now() # we are going to compare "now_time" with start_tim
 serial_number = 0            # the variable a is going to be the serial number of photos
     
 # taking the photos
-while (now_time < start_time + dt.timedelta(seconds = 10)):
+while (now_time < start_time + dt.timedelta(seconds = 10720)):
     try:
         location = find_iss()
         
@@ -60,6 +60,6 @@ while (now_time < start_time + dt.timedelta(seconds = 10)):
     except Exception as e:
         print(e)
     serial_number = serial_number + 1
-    time.sleep(1)
+    time.sleep(80)
     now_time = dt.datetime.now()
 camera.stop_preview()
